@@ -20,7 +20,13 @@ public struct HPAIndex: Codable {
     public var name: String
     
     /// The Locale for this Index.
-    public var locale: Locale
+    public var locale: Locale {
+        didSet {
+            for index in sections.indices {
+                sections[index].locale = locale
+            }
+        }
+    }
     
     /// User-facing localized title.
     public var title: String
@@ -32,7 +38,10 @@ public struct HPAIndex: Codable {
     
     // MARK: - Pages
     /// This optional page appears above the index tableview.
+    /// As an introduction page, its contents are centered.
     public var introductionPage: HPAPage?
+    
+    public var style: HPAStyles?
     
     public var sections: [HPASection]
     
@@ -45,6 +54,7 @@ public struct HPAIndex: Codable {
         case version
         case author
         case introductionPage = "introduction_page"
+        case style
         case sections
     }
     
@@ -63,6 +73,8 @@ public struct HPAIndex: Codable {
         self.author = try? values.decode(String.self, forKey: .author)
         
         self.introductionPage = try? values.decode(HPAPage.self, forKey: .introductionPage)
+        
+        self.style = try? values.decode(HPAStyles.self, forKey: .style)
         
         let _sections = try? values.decode([HPASection].self, forKey: .sections)
         self.sections = _sections ?? []
@@ -90,16 +102,5 @@ public struct HPAIndex: Codable {
         sections.append(HPASection(identifier: concatIdentifier, name: name, description: description, locale: self.locale))
         
         return sections.count - 1
-    }
-}
-
-extension HPAIndex: CustomStringConvertible {
-    public var description: String {
-        let encoder = JSONEncoder()
-        guard let data = try? encoder.encode(self) else {
-            return "Unable to encode."
-        }
-        
-        return String(data: data, encoding: .utf8) ?? "Unable to encode."
     }
 }

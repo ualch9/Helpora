@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Helpora-iOS/Helpora-iOS.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Externals/Down-0.5.1/Down.xcodeproj">
    </FileRef>
    <FileRef

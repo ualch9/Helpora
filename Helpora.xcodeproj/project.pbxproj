@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1F6913206209E400B00D74 /* HPAHelporaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1F6912206209E400B00D74 /* HPAHelporaView.swift */; };
+		CC3636A22065E5AC000B1EC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3636A12065E5AB000B1EC2 /* UIKit.framework */; };
 		CC9189ED2059704100A222D7 /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9189EE2059704100A222D7 /* Down.framework */; };
 		CC9189FD2059E30D00A222D7 /* HelporaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9189FC2059E30D00A222D7 /* HelporaTests.swift */; };
 		CC9189FF2059E30D00A222D7 /* Helpora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDFF0082059238400DF7429 /* Helpora.framework */; };
 		CC918A052059E35B00A222D7 /* PopulatedIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9189F0205971C600A222D7 /* PopulatedIndex.swift */; };
-		CCC9F261205CA5D000AD8961 /* HPAHelporaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9F260205CA5D000AD8961 /* HPAHelporaView.swift */; };
+		CCC9F261205CA5D000AD8961 /* HPAHelporaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9F260205CA5D000AD8961 /* HPAHelporaTableViewController.swift */; };
+		CCC9F26A205D79DA00AD8961 /* HPAStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9F269205D79DA00AD8961 /* HPAStyle.swift */; };
+		CCC9F26E205F449A00AD8961 /* HPAStyle+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9F26D205F449A00AD8961 /* HPAStyle+Default.swift */; };
+		CCC9F271206098EB00AD8961 /* HPAHelporaPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9F270206098EB00AD8961 /* HPAHelporaPageView.swift */; };
 		CCDFF0102059239800DF7429 /* HPAIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFEF7A2053739B00DF7429 /* HPAIndex.swift */; };
 		CCDFF0112059239800DF7429 /* HPASection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFEF822058A8F400DF7429 /* HPASection.swift */; };
 		CCDFF0122059239800DF7429 /* HPAPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDFEF842058AA8200DF7429 /* HPAPage.swift */; };
@@ -29,13 +34,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC1F6912206209E400B00D74 /* HPAHelporaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAHelporaView.swift; sourceTree = "<group>"; };
+		CC3636A12065E5AB000B1EC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC9189EE2059704100A222D7 /* Down.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9189F0205971C600A222D7 /* PopulatedIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulatedIndex.swift; sourceTree = "<group>"; };
 		CC9189F52059E1E100A222D7 /* Down.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9189FA2059E30D00A222D7 /* HelporaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelporaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9189FC2059E30D00A222D7 /* HelporaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelporaTests.swift; sourceTree = "<group>"; };
 		CC9189FE2059E30D00A222D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCC9F260205CA5D000AD8961 /* HPAHelporaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAHelporaView.swift; sourceTree = "<group>"; };
+		CCC9F260205CA5D000AD8961 /* HPAHelporaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAHelporaTableViewController.swift; sourceTree = "<group>"; };
+		CCC9F262205CA69500AD8961 /* Helpora.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Helpora.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CCC9F269205D79DA00AD8961 /* HPAStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAStyle.swift; sourceTree = "<group>"; };
+		CCC9F26D205F449A00AD8961 /* HPAStyle+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HPAStyle+Default.swift"; sourceTree = "<group>"; };
+		CCC9F26F2060810500AD8961 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		CCC9F270206098EB00AD8961 /* HPAHelporaPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAHelporaPageView.swift; sourceTree = "<group>"; };
 		CCDFEF642052160B00DF7429 /* Helpora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpora.swift; sourceTree = "<group>"; };
 		CCDFEF7A2053739B00DF7429 /* HPAIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAIndex.swift; sourceTree = "<group>"; };
 		CCDFEF822058A8F400DF7429 /* HPASection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPASection.swift; sourceTree = "<group>"; };
@@ -57,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3636A22065E5AC000B1EC2 /* UIKit.framework in Frameworks */,
 				CC9189ED2059704100A222D7 /* Down.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,9 +77,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC6E296720680D4100F45492 /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				CC6E296820680D4900F45492 /* MarkdownKit */,
+			);
+			path = externals;
+			sourceTree = "<group>";
+		};
+		CC6E296820680D4900F45492 /* MarkdownKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MarkdownKit;
+			sourceTree = "<group>";
+		};
 		CC9189EC2059704100A222D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC3636A12065E5AB000B1EC2 /* UIKit.framework */,
 				CC9189F52059E1E100A222D7 /* Down.framework */,
 				CC9189EE2059704100A222D7 /* Down.framework */,
 			);
@@ -111,7 +140,9 @@
 		CCC9F25E205CA5B200AD8961 /* ios */ = {
 			isa = PBXGroup;
 			children = (
-				CCC9F260205CA5D000AD8961 /* HPAHelporaView.swift */,
+				CCC9F260205CA5D000AD8961 /* HPAHelporaTableViewController.swift */,
+				CC1F6912206209E400B00D74 /* HPAHelporaView.swift */,
+				CCC9F270206098EB00AD8961 /* HPAHelporaPageView.swift */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -126,6 +157,7 @@
 		CCDFEF4E205215EF00DF7429 = {
 			isa = PBXGroup;
 			children = (
+				CCC9F262205CA69500AD8961 /* Helpora.playground */,
 				CCDFEF59205215EF00DF7429 /* Helpora */,
 				CCDFF00B2059238400DF7429 /* Info.plist */,
 				CC9189FB2059E30D00A222D7 /* HelporaTests */,
@@ -146,9 +178,11 @@
 		CCDFEF59205215EF00DF7429 /* Helpora */ = {
 			isa = PBXGroup;
 			children = (
+				CC6E296720680D4100F45492 /* externals */,
 				CCC9F25C205CA5A000AD8961 /* ui */,
 				CCDFEF792052168900DF7429 /* models */,
 				CCDFEF642052160B00DF7429 /* Helpora.swift */,
+				CCC9F26F2060810500AD8961 /* README.md */,
 			);
 			path = Helpora;
 			sourceTree = "<group>";
@@ -159,6 +193,8 @@
 				CCDFEF7A2053739B00DF7429 /* HPAIndex.swift */,
 				CCDFEF822058A8F400DF7429 /* HPASection.swift */,
 				CCDFEF842058AA8200DF7429 /* HPAPage.swift */,
+				CCC9F269205D79DA00AD8961 /* HPAStyle.swift */,
+				CCC9F26D205F449A00AD8961 /* HPAStyle+Default.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -283,9 +319,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDFF0102059239800DF7429 /* HPAIndex.swift in Sources */,
-				CCC9F261205CA5D000AD8961 /* HPAHelporaView.swift in Sources */,
+				CCC9F261205CA5D000AD8961 /* HPAHelporaTableViewController.swift in Sources */,
 				CCDFF0112059239800DF7429 /* HPASection.swift in Sources */,
+				CCC9F26E205F449A00AD8961 /* HPAStyle+Default.swift in Sources */,
+				CCC9F26A205D79DA00AD8961 /* HPAStyle.swift in Sources */,
 				CCDFF0122059239800DF7429 /* HPAPage.swift in Sources */,
+				CC1F6913206209E400B00D74 /* HPAHelporaView.swift in Sources */,
+				CCC9F271206098EB00AD8961 /* HPAHelporaPageView.swift in Sources */,
 				CCDFF0132059239800DF7429 /* Helpora.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +496,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aeta.Helpora;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -490,7 +530,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = aeta.Helpora;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
