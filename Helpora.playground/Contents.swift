@@ -3,6 +3,7 @@
 import UIKit
 import PlaygroundSupport
 import Helpora
+import Down
 
 var index = HPAIndex(identifier: "fdsa", name: "App Name", locale: Locale(identifier: "en_US"))
 index.addSection(identifier: "com.section", name: "yup")
@@ -17,8 +18,6 @@ Hello there! I am an introduction page!
 - I'm list item one!
 - List item two
 - List item 3
-
---
 
 ## Steps to fix:
 1. I'm item one of an ordered list!
@@ -41,17 +40,16 @@ introPage.contents = """
 
 ![Image](https://via.placeholder.com/128x128)
 
+---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat a enim non mollis. Mauris vitae dui est. Cras eu tristique dui, sit amet condimentum dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean tempus posuere nulla, sed tincidunt odio iaculis ut. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus
 
 et malesuada fames ac turpis egestas.
 """
 index.introductionPage = introPage
 
-PlaygroundPage.current.liveView = HPAHelporaView(withIndex: index)
-
-let encoder = JSONEncoder()
-let data = try! encoder.encode(index)
-print(String(data: data, encoding: .utf8)!)
+PlaygroundPage.current.liveView = try? DownView(frame: .zero, markdownString: introPage.contents)
+//PlaygroundPage.current.liveView = HPAHelporaView(withIndex: index)
 
 //let decoder = JSONDecoder()
 //let style = try! decoder.decode(HPAStyle.self, from: data)

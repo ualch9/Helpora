@@ -32,6 +32,9 @@ public class HPAHelporaTableViewController: UITableViewController {
         
         if let introPage = self.helporaIndex.introductionPage,
             let contents = introPage.attributedString(with: self.helporaIndex.style) {
+//            let view = try! DownView(frame: .zero, markdownString: introPage.contents)
+//            self.tableView.tableHeaderView = view
+//            view.sizeToFit()
             let text = UITextView(frame: .zero)
             text.attributedText = contents
             text.isUserInteractionEnabled = false
@@ -40,7 +43,7 @@ public class HPAHelporaTableViewController: UITableViewController {
             text.textAlignment = .center
             
             self.tableView.tableHeaderView = text
-//            text.textContainerInset = self.tableView.contentInset
+            text.textContainerInset = self.tableView.contentInset
             text.contentInset = self.tableView.contentInset
             text.sizeToFit()
         }

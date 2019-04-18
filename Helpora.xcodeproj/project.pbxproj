@@ -77,21 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC6E296720680D4100F45492 /* externals */ = {
-			isa = PBXGroup;
-			children = (
-				CC6E296820680D4900F45492 /* MarkdownKit */,
-			);
-			path = externals;
-			sourceTree = "<group>";
-		};
-		CC6E296820680D4900F45492 /* MarkdownKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MarkdownKit;
-			sourceTree = "<group>";
-		};
 		CC9189EC2059704100A222D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +163,6 @@
 		CCDFEF59205215EF00DF7429 /* Helpora */ = {
 			isa = PBXGroup;
 			children = (
-				CC6E296720680D4100F45492 /* externals */,
 				CCC9F25C205CA5A000AD8961 /* ui */,
 				CCDFEF792052168900DF7429 /* models */,
 				CCDFEF642052160B00DF7429 /* Helpora.swift */,
